@@ -35,7 +35,7 @@ public class PokemonResource {
     private RestTemplate restTemplate;
 
     private static final Logger logger = LoggerFactory.getLogger(PokemonResource.class);
-    /* g
+    /* 
     1. The 5 heaviest Pokémons.
     2. The 5 highest Pokémons.
     3. The 5 Pokémons with more base experience.
@@ -143,17 +143,5 @@ public class PokemonResource {
             return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).build();
         }
     }
-
-    /* @Operation(summary = "heaviest Pokémons")
-    @GetMapping("/{id}")
-    public Cart getHighest(@PathVariable Long id) {
-        return cartService.getCart(id);
-    }
-
-    @Operation(summary = "heaviest Pokémons")
-    @GetMapping("/{id}")
-    public Cart getMoreBaseExp(@PathVariable Long id) {
-        return cartService.getCart(id);
-    } */
 
 }
